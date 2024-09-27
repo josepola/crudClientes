@@ -1,28 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Crud Clientes</title>
-    <link rel="stylesheet" href="css/misEstilos.css">
-</head>
-<body>
-  <main>
-    <h1>Formulario de Cliente</h1>
-    <form>
+    <link rel="stylesheet" href="css/misEstilos.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Formulario de Cliente</h1>
+      <form>
         <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre">
+        <input type="text" id="nombre" />
         <label for="DNI">DNI:</label>
-        <input type="text" id="DNI">
+        <input type="text" id="DNI" />
         <label for="movil">Móvil:</label>
-        <input type="text" id="movil">
+        <input type="text" id="movil" />
         <label for="direccion">Dirección:</label>
-        <input type="text" id="direccion">
+        <input type="text" id="direccion" />
         <button type="button" onclick="nuevoCliente()">Enviar</button>
-    </form>
-    <div id="mensaje"></div>
-  </main>  
+      </form>
+      <div id="mensaje"></div>
+      <div>
+        <table>
+          <thead>
+            <tr>
+              <th>Nombre</th>
+              <th>DNI</th>
+              <th>Móvil</th>
+              <th>Dirección</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </main>
 
-  <script type="module" src="./main.js"></script>
-</body>
+    <script type="module" src="./main.js"></script>
+  </body>
 </html>
