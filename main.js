@@ -7,7 +7,7 @@ function cargaClientes() {
     clientesArray = todosClientes();
     // crear una tabla para mostrarlos
     let tbody = document.querySelector('tbody');
-    tbody.innerHTML = '';
+    tbody.innerHTML = '';// borro las filas de la tabla
     clientesArray.forEach(cliente => {
         let tr = document.createElement('tr');
         let tdNombre = document.createElement('td');
